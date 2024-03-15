@@ -1,0 +1,34 @@
+---
+vcenter_hostname: "drincvcs01v.uss.net"
+vcenter_username: "bdiamond.aa@incomm.com"
+vcenter_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          65613036653032343435363237346435646361333836386230623338646237386366313764623037
+          3163393539366161633465616464656230333065316233370a373331303932376138386135343931
+          38316666336238653066653164396531306366323138326234356135636639666330626336643637
+          6362353362363830610a656531333064343036353664643064613731626261616135666463356436
+          38626132623831383662636165653164663934656337333230356237346263373439
+vcenter_datacenter: "INCOMMDENVER"
+#vcenter_datacenter: "EHC_AUTOMATION"
+vcenter_validate_certs: false
+vcenter_cluster: "EHC_AUTOMATION"
+#vcenter_cluster: "INCOMMDENVER"
+#vm_name: "ansible_test02"
+#vm_guestid: "rhel8_64Guest"
+#vm_guestid: "other4xLinux64Guest"
+#vm_disk_gb: 30
+vm_disk_type: "thin"
+vm_disk_datastore: "MGMT-DR-DS-01"
+vm_hw_scsi: "paravirtual"
+#vm_hw_ram_mb : 4096
+#vm_hw_cpu_n: 2
+vm_hw_scsi: "paravirtual"
+#vm_net_name: "EHC_AUTOMATION_2106"
+vm_net_type: "vmxnet3"
+#vm_ip: "10.140.106.201"
+#vm_net_mask: "255.255.255.0"
+#vm_net_gw: "10.140.106.1"
+vm_net_dns: "10.83.31.40"
+vcenter_destination_folder: "EHC"
+vm_state: "poweredon"
+#vm_template: "Template_RHEL89dr"
