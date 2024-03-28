@@ -2,8 +2,6 @@
 - hosts: localhost
   become: false
   gather_facts: false
-  vars_files:
-    - ~/vault.yaml
 
   vars:
     date: "{{ lookup('pipe', 'date +%Y-%m-%d_%H:%M:%S') }}"
